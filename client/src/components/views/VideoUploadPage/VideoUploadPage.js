@@ -41,6 +41,10 @@ function VideoUploadPage ( ) {
         setCategory(e.currentTarget.value)
     }
 
+    const onDrop = () => {
+        
+    }
+
     return (
         <div style={{ maxWidth:'700px', margin:'2rem auto'}}>
             
