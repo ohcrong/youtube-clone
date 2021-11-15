@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Typography, Button, Form, message, Icon, Input} from 'antd'
 import Dropzone from 'react-dropzone'
+import Axios from 'axios'
 
 const { TextArea } = Input;
 const { Title } = Typography;
@@ -44,7 +45,7 @@ function VideoUploadPage ( ) {
         setCategory(e.currentTarget.value)
     }
 
-    const onDrop = () => {
+    const onDrop = (files) => {
         let formData = new FormData;
         const config = {
             header:{ 'content-type': 'multipart/form-data'}
