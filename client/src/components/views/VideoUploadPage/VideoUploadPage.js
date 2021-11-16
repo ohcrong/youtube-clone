@@ -65,7 +65,7 @@ function VideoUploadPage ( ) {
                 Axios.post('/api/video/thumbnail', variable)
                 .then(response => {
                     if (response.data.success) {
-
+                        //성공시 state에 썸네일경로, 영화러닝타임 정보 저장
                         setDurations(response.data.fileDuration)
                         setThumbnailPath(response.data.url)
 
