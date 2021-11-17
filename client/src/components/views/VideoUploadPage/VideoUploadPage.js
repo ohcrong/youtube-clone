@@ -68,7 +68,7 @@ function VideoUploadPage ( ) {
                         //성공시 state에 썸네일경로, 영화러닝타임 정보 저장
                         setDurations(response.data.fileDuration)
                         setThumbnailPath(response.data.url)
-
+                        console.log(response.data)
                     } else {
                         alert('썸네일 생성 실패했습니다!')
                     }
