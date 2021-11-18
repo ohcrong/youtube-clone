@@ -60,11 +60,11 @@ router.post('/thumbnail', (req,res) => {
             thumbsFilePath = "uploads/thumbnails/" + filenames[0];
         })
         .on('end', function () {
-            console.log('Screenshots taken');
+            //console.log('Screenshots taken');
             return res.json({ success: true, url: thumbsFilePath, fileDuration: fileDuration})
         })
         .on('error', function (err) {
-            console.error(err)
+            //console.error(err)
             return res.json( {success: false, err})
         })
         .screenshots({
